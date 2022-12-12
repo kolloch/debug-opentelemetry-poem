@@ -248,7 +248,9 @@ dependencies = [
  "eyre",
  "opentelemetry",
  "opentelemetry-prometheus",
+ "opentelemetry-semantic-conventions",
  "poem",
+ "prometheus",
  "tokio",
 ]
 

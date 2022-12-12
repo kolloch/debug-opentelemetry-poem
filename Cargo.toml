@@ -18,12 +18,14 @@ color-eyre = "0.6"
 tokio = { version = "1", features = ["macros", "rt-multi-thread", "signal", "time", "parking_lot"] }
 
 # Metrics
-# opentelemetry-semantic-conventions = { version = "0.10"}
 opentelemetry-prometheus = { version = "0.11"}
-# prometheus = { version = "0.13"}
+
 opentelemetry = {  version = "0.18", features = ["metrics"]}
 
 # HTTP
 poem = { version = "1", features = ["compression", "opentelemetry", "prometheus", "eyre06", "static-files" ] }
 # reqwest = { version = "0.11", features = ["json"] }
 
+[dev-dependencies]
+prometheus = { version = "0.13"}
+opentelemetry-semantic-conventions = { version = "0.10"}
